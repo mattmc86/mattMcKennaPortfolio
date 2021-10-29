@@ -2,10 +2,9 @@
 /*common elements and classes used in multiple areas*/
 
 
-
-
 body {
   background-color: #dbf9fc;
+    
 }
 
 
@@ -28,12 +27,13 @@ p {
   color: #33475b;
   font-family: monospace;
   font-size: 16px;
+  margin: 0%;
 }
 /*navbar section below*/
 
 .navbar {
     background-color: #33475b;
-    overflow: hidden;
+    overflow: hidden; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -86,8 +86,8 @@ p {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    border-right: 2px solid #33475b ;
-    border-left: 2px solid #33475b ;
+    /* border-right: 2px solid #33475b ;
+    border-left: 2px solid #33475b ; */
 }
 
 /*Qualifications section below*/
@@ -104,14 +104,10 @@ p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex: 0 0 20%
 }
 
 
-#stack {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 ul {
   color: #33475b;
   font-family: monospace;
@@ -121,26 +117,39 @@ ul {
 .logo {
   height: 50px;
   width: 60px;
+  flex: 0 0 25%;
+  
+
 }
 
-  @media screen and (max-width: 200px) {
+  @media screen and (max-width: 600px) {
     #stack {
      
+      /* display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px; */
       flex-direction: column;
       justify-content: center;
       align-items: center;
+     
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (min-width: 600px) {
     #stack {
      
-      flex-basis: 20%;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      /* flex-direction: column; */
+      /* justify-content: center;
       align-items: center;
+     */
+      margin-left:140px;
+
     }
   }
-  
+ 
 
   span[data-descr]:hover::after{
   content: attr(data-descr);
@@ -165,31 +174,57 @@ ul {
   flex-wrap: wrap;
 }
 
-.project-image{
-    height:200px;
-    width:200px;
+/* .project-image{
     
-}
+    
+    
+} */
 
 .project1 {
     height:200px;
-    width:80%;
-    justify-content: flex-start;
+    width:100%;
+    background-image: url("./Project 1.png");
+    background-size: 80%;
+    margin: 0%;
+    
+    /* justify-content: flex-start; */
 }
 
 .placeholder-image{
-    width: 100px;   
-    height: 100px;
-    border:10px solid yellow;
-    background-color:green;
+    /* width: 250px;    */
+    height: 200px;
+    margin: 3px;
+    background-color:grey;
 }
 
  .projects-grid{
-    border: 10px solid red;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row; 
+   margin: 70px;
+
+    /* border: 10px solid red; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+ 
 } 
+
+.top-project{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-gap: 10px;
+
+}
+
+.bottom-projects{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-gap: 10px;
+justify-self: center;
+}
+
+
+
 
 /*Link Section below*/
 
@@ -236,87 +271,7 @@ ul {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    opacity: 50%;
   }
 
-  /*Project Section below*/
-
-.projectsv2{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.project-imagev2{
-    height:200px;
-    width:80%;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.project1v2 {
-    height:200px;
-    width:80%;
-    justify-content: flex-start;
-}
-
-.placeholder-image{
-    width: 40%;   
-    height: 100px;
-    border:10px solid yellow;
-    background-color:green;
-}
-
-.row{
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-main {
-  /* Turns this element into a flexbox */
-  display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  margin-top: 2%;
-}
-
-.main-header {
-  display: flex;
-  /* Defines how to distribute the empty space between child elements */
-  justify-content: space-between;
-  padding: 60px;
-  background: #13293d;
-  color: #fff;
-}
-
-.card {
-  /* A flex-basis of 200px sets the starting width */
-  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-  flex: 1 0 200px;
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.card header {
-  padding: 20px;
-  background: #13293d;
-  color: #fff;
-}
-
-.card.camera {
-  /* With a flex-grow value of 2, this element grows twice as wide as others */
-  /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-  flex: 2 1 200px;
-  width:80%;
-  f
-}
-
-.image-container {
-  /* flex: 0 0 50%; */
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 50%
-}
+  
