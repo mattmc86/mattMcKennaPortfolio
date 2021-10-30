@@ -36,7 +36,7 @@ Project one image
 Contact
 Name: Matthew McKenna email:matthewmckenna1986@hotmail.com
 
-Project Link: https://github.com/your_username/repo_name
+Project Link: https://mattmc86.github.io/mattMcKennaPortfolio/
 
 
 
