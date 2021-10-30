@@ -172,6 +172,7 @@ ul {
 .projects{
   display: flex;
   flex-wrap: wrap;
+  margin:70%;
 }
 
 /* .project-image{
@@ -212,6 +213,7 @@ ul {
   display: grid;
   grid-template-columns: 4fr;
   grid-gap: 10px;
+
 
 }
 
