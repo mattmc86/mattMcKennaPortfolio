@@ -175,9 +175,17 @@ ul {
   margin:70%;
 }
 
+.projectSection{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+
+}
 /* .project-image{
     
-    
+
     
 } */
 
