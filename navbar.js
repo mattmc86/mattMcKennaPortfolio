@@ -1,11 +1,11 @@
-const toggleBurger = () => {
-  let burgerIcon = document.getElementById("burger");
-  let dropMenu = document.getElementById("teamList");
-  burgerIcon.classList.toggle("is-active");
-  dropMenu.classList.toggle("is-active");
-};
+let burgerIcon = document.getElementById("burger");
+let dropMenu = document.getElementById("navbarBasicExample");
+// burgerIcon.classList.toggle("is-active");
 
-console.log("hello");
+burgerIcon.addEventListener("click", () => {
+  dropMenu.classList.toggle("is-active");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   // Functions to open and close a modal
   function openModal($el) {
