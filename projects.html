@@ -1,136 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew McKenna Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
-    />
+    <link rel="stylesheet" href="./styleNew.css" />
   </head>
   <body>
-    <section class="section">
-      <div class="container">
-        <!-- Start Carousel -->
-        <div id="carousel-demo" class="carousel">
-          <div class="item-1">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img src="./movieAndBook.png" alt="Placeholder image" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left"></div>
-                  <div class="media-content">
-                    <p class="title is-4">Movie and Book Generator</p>
-                  </div>
-                </div>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="./profilePhoto.png" width="72" height="28" />
+        </a>
 
-                <div class="content">
-                  Choose a genre and get recomendations for something to read or
-                  watch and where to find it.
-                  <a
-                    href="https://mattglwilliams.github.io/the-movie-book-generator/"
-                    target="blank"
-                    >Check it out</a
-                  >
-                  <br />
+        <a
+          role="button"
+          class="navbar-burger"
+          id="burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-                  <a
-                    href="https://github.com/mattglwilliams/the-movie-book-generator"
-                    target="blank"
-                    >Check out the repo</a
-                  >
-                  <br />
-                </div>
-              </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#stack">Stack</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section class="section is-medium">
+      <h1 class="title"><strong>Hi</strong>, I'm Matthew McKenna</h1>
+      <br />
+      <br />
+      <h2 class="subtitle">
+        A Test Analyst with experience in defining test strategies for
+        functional testing.
+        <br />
+        Familiar with agile methodologies and BDD frameworks.
+        <br />
+        Currently doing a full stack coding bootcamp.
+      </h2>
+      <br />
+      <a href="https://github.com/mattmc86" target="blank"
+        ><img class="link-img" src="gitHub.svg" alt="Github"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/matthew-mckenna-aa7b29152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3zzWqHs9QZ2gTBoPpPV%2F8w%3D%3D"
+        target="blank"
+        ><img
+          class="link-img"
+          src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/linkedin-logo-3.png"
+          alt="LinkedIn"
+      /></a>
+    </section>
+
+    <section class="section is-small is-flex-direction-row" id="projects">
+      <h1 class="title">My projects</h1>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="./movieAndBook.png" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left"></div>
+            <div class="media-content">
+              <p class="title is-4">Movie and Book Generator</p>
             </div>
           </div>
-          <div class="item-2">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img src="./weather.png" alt="Placeholder image" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left"></div>
-                  <div class="media-content">
-                    <p class="title is-4">Weather App</p>
-                  </div>
-                </div>
 
-                <div class="content">
-                  Find out the current weather for a city and the 5 day forcast.
-                  <a
-                    href="https://mattmc86.github.io/weatherApp/"
-                    target="blank"
-                    >Check it out</a
-                  >
-                  <br />
-                  <a
-                    href="https://github.com/mattmc86/weatherApp"
-                    target="blank"
-                    >Check out the repo</a
-                  >
+          <div class="content">
+            Choose a genre and get recomendations for something to read or watch
+            and where to find it.
+            <a
+              href="https://mattglwilliams.github.io/the-movie-book-generator/"
+              target="blank"
+              >Check it out</a
+            >
+            <br />
 
-                  <br />
-                </div>
-              </div>
+            <a
+              href="https://github.com/mattglwilliams/the-movie-book-generator"
+              target="blank"
+              >Check out the repo</a
+            >
+            <br />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="./weather.png" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left"></div>
+            <div class="media-content">
+              <p class="title is-4">Weather App</p>
             </div>
           </div>
-          <div class="item-3">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-2by1">
-                  <img src="./TTM.png" alt="Placeholder image" />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left"></div>
-                  <div class="media-content">
-                    <p class="title is-4">Team Task Manager</p>
-                  </div>
-                </div>
 
-                <div class="content">
-                  Full stack app to manage projects.
-                  <a
-                    href="https://teamtask-manager.herokuapp.com/"
-                    target="blank"
-                    >Check it out</a
-                  >
-                  <br />
-                  <a
-                    href="https://github.com/AidKool/team-task-manager"
-                    target="blank"
-                    >Check out the repo</a
-                  >
-                  <br />
-                </div>
-              </div>
+          <div class="content">
+            Find out the current weather for a city and the 5 day forcast.
+            <a href="https://mattmc86.github.io/weatherApp/" target="blank"
+              >Check it out</a
+            >
+            <br />
+            <a href="https://github.com/mattmc86/weatherApp" target="blank"
+              >Check out the repo</a
+            >
+
+            <br />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="./TTM.png" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left"></div>
+            <div class="media-content">
+              <p class="title is-4">Team Task Manager</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Full stack app to manage projects.
+            <a href="https://teamtask-manager.herokuapp.com/" target="blank"
+              >Check it out</a
+            >
+            <br />
+            <a
+              href="https://github.com/AidKool/team-task-manager"
+              target="blank"
+              >Check out the repo</a
+            >
+            <br />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img src="./employee.png" alt="Placeholder image" />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left"></div>
+            <div class="media-content">
+              <p class="title is-4">Team Builder</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Create team members and profiles using inquirer which generates an
+            HTML page.
+            <a
+              href="https://github.com/mattmc86/Team-Profile-Generator"
+              target="blank"
+              >Check out the repo</a
+            >
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section class="section is-small">
+      <h1 class="title">Stack</h1>
+      <div id="stack">
+        <div class="tile is-ancestor">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/html.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">HTML</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/css.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">CSS</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/javascript.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Javascript</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/node.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Node</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/express.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Express</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/sql.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Sequelize</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/cucumber.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Cucumber</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./assets/selenium.svg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Selenium</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./gherkin.png" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Jira</p>
             </div>
           </div>
         </div>
-        <!-- End Carousel -->
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-    <script>
-      bulmaCarousel.attach("#carousel-demo", {
-        slidesToScroll: 1,
-        slidesToShow: 4,
-      });
-    </script>
+    <section class="section is-small">
+      <h1 class="title">Getting in touch</h1>
+      <div id="contact">
+        <div class="contact-list">
+          <h2>You can reach me at mattjmdev@gmail.com</h2>
+        </div>
+      </div>
+    </section>
+    <script src="navbar.js"></script>
   </body>
 </html>
+
+<!-- <div class="tile imgHolder">
+            <img class="logo" src="./assets/html.svg" alt="HTML" />
+           
+          </div>
+
+          <div class="tile" data-tooltip="HTML">
+            <img
+              class="logo"
+              data-tooltip="HTML"
+              src="./assets/css.svg"
+              alt="CSS"
+            />
+          </div>
+          <div class="tile">
+            <img class="logo" src="./assets/javascript.svg" alt="JS" />
+          </div>
+          <div class="tile">
+            <img class="logo" src="./assets/node.svg" alt="Node" />
+          </div>
+           </div> -->
+<!-- <div class="tile is-ancestor"> -->
+<!-- <div class="tile is-vertical">
+  <img class="logo" src="./assets/express.svg" alt="Express" />
+</div>
+<div class="tile">
+  <img class="logo" src="./assets/sql.svg" alt="SQL" />
+</div>
+<div class="tile">
+  <img class="logo" src="./assets/cucumber.svg" alt="Cucumber" />
+</div>
+<div class="tile">
+  <img class="logo" src="./assets/selenium.svg" alt="Selenium" />
+</div>
+<div class="tile">
+  <img class="logo" src="./assets/jira.svg" alt="jira" />
+</div> -->
+-->
