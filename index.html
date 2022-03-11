@@ -10,13 +10,17 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./styleNew.css" />
+    <script
+      src="https://kit.fontawesome.com/bb4b4cc6f2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <div class="navbar-item">
           <img src="./profilePhoto.png" width="72" height="28" />
-        </a>
+        </div>
 
         <a
           role="button"
@@ -36,12 +40,16 @@
         <div class="navbar-start">
           <a class="navbar-item" href="#projects">Projects</a>
           <a class="navbar-item" href="#stack">Stack</a>
+          <a class="navbar-item" href="#qualifications">Qualifications</a>
           <a class="navbar-item" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
     <section class="section is-medium">
-      <h1 class="title"><strong>Hi</strong>, I'm Matthew McKenna</h1>
+      <h1 class="title">
+        <strong style="color: red">Hi</strong>, I'm Matthew McKenna
+      </h1>
+
       <br />
       <br />
       <h2 class="subtitle">
@@ -250,16 +258,40 @@
         </div>
       </div>
     </section>
+    <section class="section is-small" id="qualifications">
+      <h1 class="title">Qualifications</h1>
 
-    <section class="section is-small">
-      <h1 class="title">Getting in touch</h1>
-      <div id="contact">
-        <div class="contact-list">
-          <h2>
-            You can send me an email by clicking
-            <a href="mailto:mattjmdev@gmail.com">here</a>
-          </h2>
+      <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+          <div class="box">
+            <ul>
+              <li>Prince2 Project Management Foundation</li>
+              <li>ISTQB Software Tester</li>
+              <li>ISTQB Advanced Agile Software Tester</li>
+              <li>SAFE practitioner</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <button
+        class="js-modal-trigger button is-primary"
+        data-target="modal-js-example"
+      >
+        Click to see my qualifications
+      </button>
+    </section>
+
+    <section class="section is-small" id="contact">
+      <h1 class="title">Getting in touch</h1>
+
+      <div class="contact-list">
+        <h2>
+          You can send me an email by clicking
+          <a href="mailto:mattjmdev@gmail.com">here</a>
+        </h2>
       </div>
     </section>
     <script src="navbar.js"></script>
